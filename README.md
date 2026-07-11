@@ -65,7 +65,7 @@
 
 **LeetCode Stats**
 
-<img src="https://leetcard.jacoblin.cool/notaanidhya?theme=dark&font=Fira%20Code&ext=heatmap&hide_rank=true" height="165"/>
+<img src="https://leetcard.jacoblin.cool/notaanidhya?theme=dark&font=Fira%20Code&ext=heatmap&hide_rank=true" height="300"/>
 
 </td>
 </tr>
