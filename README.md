@@ -32,5 +32,5 @@
 ### 🐍 Contribution Snake
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/notaanidhya/notaanidhya/output/github-contribution-grid-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/notaanidhya/notaanidhya/output/github-snake-dark.svg" />
 </p>
