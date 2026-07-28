@@ -25,7 +25,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USER: notaanidhya
           WEEKS_TO_SHOW: 26
-          STEP_SECONDS: 0.4
+          STEP_SECONDS: 0.3
         run: |
           node generate-snake.mjs
           DARK=1 OUT_FILE=dist/github-snake-dark.svg node generate-snake.mjs
