@@ -1,31 +1,37 @@
-name: Generate Snake Animation
+name: Generate half-year snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # runs every 12 hours
-  workflow_dispatch: {}
+    - cron: "0 0 * * *"
+  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   generate:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
     steps:
-      - name: Generate snake animation SVG
-        uses: Platane/snk@v3
-        with:
-          github_user_name: notaanidhya
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: actions/checkout@v4
 
-      - name: Push output to "output" branch
-        uses: crazy-max/ghaction-github-pages@v4
+      - uses: actions/setup-node@v4
         with:
-          target_branch: output
-          build_dir: dist
+          node-version: 20
+
+      - name: Generate snake SVGs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: notaanidhya
+          WEEKS_TO_SHOW: 26
+          STEP_SECONDS: 0.4
+        run: |
+          node generate-snake.mjs
+          DARK=1 OUT_FILE=dist/github-snake-dark.svg node generate-snake.mjs
+          OUT_FILE=dist/github-snake-light.svg node generate-snake.mjs
+
+      - name: Push to output branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
+          commit_message: "Update snake animation [skip ci]"
