@@ -20,7 +20,8 @@
 <br>
 
 **GitHub Stats**
-<img src="https://github-readme-streak-stats.vercel.app/?user=notaanidhya&theme=dark&hide_border=true" height="165"/>
+
+<img src="https://streak-stats.demolab.com/?user=notaanidhya&theme=dark&hide_border=true" height="165"/>
 
 **LeetCode Stats**
 
