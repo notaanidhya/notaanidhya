@@ -174,7 +174,7 @@
   <rect x="370" y="70" width="12" height="12" rx="2" fill="#ebedf0"></rect>
   <rect x="370" y="85" width="12" height="12" rx="2" fill="#ebedf0"></rect>
   <rect x="370" y="100" width="12" height="12" rx="2" fill="#ebedf0"></rect>
-  <rect x="385" y="10" width="12" height="12" rx="2" fill="#ebedf0"></rect>
+  <rect x="385" y="10" width="12" height="12" rx="2" fill="#216e39"><animate attributeName="fill" values="#216e39" dur="0.01s" begin="0s; cycle.repeatEvent" fill="freeze"/><animate attributeName="fill" values="#216e39;#ebedf0" dur="0.2s" begin="45.25s; cycle.repeatEvent+45.25s" fill="freeze"/></rect>
   <rect x="385" y="25" width="12" height="12" rx="2" fill="#ebedf0"></rect>
   <rect x="385" y="40" width="12" height="12" rx="2" fill="#ebedf0"></rect>
   <rect x="385" y="55" width="12" height="12" rx="2" fill="#ebedf0"></rect>
