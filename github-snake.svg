@@ -177,7 +177,7 @@
   <rect x="385" y="10" width="12" height="12" rx="2" fill="#30a14e"><animate attributeName="fill" values="#30a14e" dur="0.01s" begin="0s; cycle.repeatEvent" fill="freeze"/><animate attributeName="fill" values="#30a14e;#ebedf0" dur="0.2s" begin="45.25s; cycle.repeatEvent+45.25s" fill="freeze"/></rect>
   <rect x="385" y="25" width="12" height="12" rx="2" fill="#30a14e"><animate attributeName="fill" values="#30a14e" dur="0.01s" begin="0s; cycle.repeatEvent" fill="freeze"/><animate attributeName="fill" values="#30a14e;#ebedf0" dur="0.2s" begin="45.00s; cycle.repeatEvent+45.00s" fill="freeze"/></rect>
   <rect x="385" y="40" width="12" height="12" rx="2" fill="#ebedf0"></rect>
-  <rect x="385" y="55" width="12" height="12" rx="2" fill="#ebedf0"></rect>
+  <rect x="385" y="55" width="12" height="12" rx="2" fill="#9be9a8"><animate attributeName="fill" values="#9be9a8" dur="0.01s" begin="0s; cycle.repeatEvent" fill="freeze"/><animate attributeName="fill" values="#9be9a8;#ebedf0" dur="0.2s" begin="44.50s; cycle.repeatEvent+44.50s" fill="freeze"/></rect>
   <rect x="385" y="70" width="12" height="12" rx="2" fill="#ebedf0"></rect>
   <rect x="385" y="85" width="12" height="12" rx="2" fill="#ebedf0"></rect>
   <rect x="385" y="100" width="12" height="12" rx="2" fill="#ebedf0"></rect>
